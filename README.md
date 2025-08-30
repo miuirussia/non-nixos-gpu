@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2025 Jure Varlec <jure@varlec.si>
+
+SPDX-License-Identifier: MIT
+-->
+
 # GPU setup for Nix programs on non-NixOS systems
 
 When running programs from [nixpkgs][nixpkgs] using [Nix][nix], they will

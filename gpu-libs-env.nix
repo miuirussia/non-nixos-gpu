@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2025 Jure Varlec <jure@varlec.si>
+#
+# SPDX-License-Identifier: MIT
+
 {
   lib,
   buildEnv,

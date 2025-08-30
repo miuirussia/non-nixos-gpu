@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# SPDX-FileCopyrightText: 2025 Jure Varlec <jure@varlec.si>
+#
+# SPDX-License-Identifier: MIT
+
 set -e
 
 gcroots=@@resources@@
