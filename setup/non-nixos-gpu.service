@@ -2,7 +2,7 @@
 Description=GPU driver setup for Nix on non-NixOS Linux systems
 
 [Install]
-WantedBy=multi-user.service
+WantedBy=multi-user.target
 
 [Service]
 Type=oneshot
