@@ -1,0 +1,10 @@
+[Unit]
+Description=GPU driver setup for Nix on non-NixOS Linux systems
+
+[Install]
+WantedBy=multi-user.service
+
+[Service]
+Type=oneshot
+ExecStart=ln -sf @@env@@ /run/opengl-driver
+RemainAfterExit=yes
