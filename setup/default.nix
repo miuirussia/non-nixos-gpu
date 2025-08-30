@@ -1,10 +1,19 @@
 {
+  lib,
   stdenv,
   non-nixos-gpu-env,
 }:
 
 stdenv.mkDerivation {
   name = "non-nixos-gpu";
+
+  meta = {
+    description = "GPU driver setup for Nix on non-NixOS Linux systems";
+    homepage = "https://github.com/exzombie/non-nixos-gpu";
+    license = lib.licenses.mit;
+    mainProgram = "non-nixos-gpu-setup";
+  };
+
   src = ./.;
   patchPhase = ''
     substituteInPlace non-nixos-gpu* \
