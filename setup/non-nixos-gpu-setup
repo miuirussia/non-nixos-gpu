@@ -16,4 +16,5 @@ ln -sf @@resources@@/non-nixos-gpu.service "$unit_path"
 ln -sf "$unit_path" "$gcroots"/non-nixos-gpu.service
 
 systemctl daemon-reload
-systemctl enable --now non-nixos-gpu.service
+systemctl enable non-nixos-gpu.service
+systemctl restart non-nixos-gpu.service
