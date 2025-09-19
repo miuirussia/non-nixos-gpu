@@ -10,5 +10,5 @@ WantedBy=multi-user.target
 
 [Service]
 Type=oneshot
-ExecStart=ln -sf @@env@@ /run/opengl-driver
+ExecStart=ln -nsf @@env@@ /run/opengl-driver
 RemainAfterExit=yes
