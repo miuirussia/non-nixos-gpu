@@ -20,7 +20,17 @@ particular way. Other distributions do not have the appropriate setup in place.
 Consequently, programs run using Nix that depend on OpenGL or Vulkan won't work
 out of the box.
 
-This package aims to fix this by providing a NixOS-equivalent setup on other distributions.
+This package aims to fix this by providing a NixOS-equivalent setup on other
+distributions.
+
+
+## How does it work?
+
+This package builds a derivation containing OpenGL and Vulkan libraries. It then
+installs a Systemd service on the host OS that runs on boot, symlinking these
+libraries to `/run/opengl-driver`. This is the location where programs from
+nixpkgs expect to find them. Programs from the host OS know nothing about this
+directory and are unaffected.
 
 
 ## How is this different from nixGL?
